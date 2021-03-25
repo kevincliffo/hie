@@ -1,0 +1,158 @@
+{% extends 'layout.html' %}
+
+{% block title %} Health Data {% endblock %}
+
+{% block content %}
+<ul class="list-group">
+        <li class="list-group-item active">Health Data</li>
+        <li class="list-group-item"  data-toggle="modal" data-target="#bodym">Body Measurements</li>
+        <li class="list-group-item">Health Records</li>
+        <li class="list-group-item"  data-toggle="modal" data-target="#heart">Heart</li>
+        <li class="list-group-item"  data-toggle="modal" data-target="#rhealth">Reproductive Health</li>
+        <li class="list-group-item"  data-toggle="modal" data-target="#results">Results</li>
+        <li class="list-group-item"  data-toggle="modal" data-target="#vitals">Vitals</li>
+
+        <!-- Modal -->
+        <div class="modal fade" id="bodym" tabindex="-1" role="dialog" aria-labelledby="bodymTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="bodymTitle">Body Measurements</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">No Recorded Data</li>
+                            <li class="list-group-item">Body at Percentage</li>
+                            <li class="list-group-item">Body Mass Index</li>
+                            <li class="list-group-item">Lean Body Mass</li>
+                            <li class="list-group-item">Waist Circumference</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="heart" tabindex="-1" role="dialog" aria-labelledby="heartTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="heartTitle">Heart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">No Recorded Data</li>
+                            <li class="list-group-item">Electrocardioram (ECG)</li>
+                            <li class="list-group-item">Heart Rate</li>
+                            <li class="list-group-item">Heart Rate Variability</li>
+                            <li class="list-group-item">High Heart Rate Notifications</li>
+                            <li class="list-group-item">Irregular Rythm Notifications</li>
+                            <li class="list-group-item">Low Heart Rate Notifications</li>
+                            <li class="list-group-item">Resting Heart Rate</li>
+                            <li class="list-group-item">Walking Heart Rate Average</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="rhealth" tabindex="-1" role="dialog" aria-labelledby="rhealthTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="rhealthTitle">Reproductive Health</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">No Recorded Data</li>
+                            <li class="list-group-item">Basal Body Temperature</li>
+                            <li class="list-group-item">Cervical Mucus Quality</li>
+                            <li class="list-group-item">Menstruation</li>
+                            <li class="list-group-item">Ovulation Test Result</li>
+                            <li class="list-group-item">Sexuality</li>
+                            <li class="list-group-item">Spotting</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="results" tabindex="-1" role="dialog" aria-labelledby="resultsTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="resultsTitle">Results</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">No Recorded Data</li>
+                            <li class="list-group-item">Blood Alcohol Content</li>
+                            <li class="list-group-item">Blood Glucose</li>
+                            <li class="list-group-item">Electrodermal Activity</li>
+                            <li class="list-group-item">Forced Expiration Volume, 1 Sec</li>
+                            <li class="list-group-item">Forced Vital Capacity</li>
+                            <li class="list-group-item">Inhaler Usage</li>
+                            <li class="list-group-item">Insulin Delivery</li>
+                            <li class="list-group-item">Number of Times Fallen</li>
+                            <li class="list-group-item">Oxygen Saturation</li>
+                            <li class="list-group-item">Peak Expiratory Flow Rate</li>
+                            <li class="list-group-item">Peripheral Perfusion Index</li>
+                            <li class="list-group-item">UV Index</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="vitals" tabindex="-1" role="dialog" aria-labelledby="vitalsTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="vitalsTitle">Vitals</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ul class="list-group">
+                            <li class="list-group-item active">No Recorded Data</li>
+                            <li class="list-group-item">Body Tempereature</li>
+                            <li class="list-group-item">Heart Rate</li>
+                            <li class="list-group-item">Respiratory Rate</li>
+                        </ul>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </ul>
+{% endblock %}
