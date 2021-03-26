@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% block title %} {% endblock %}</title>
+	<link rel="icon" href="{% static 'app/images/loc.png' %}" type="image/x-icon">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
@@ -23,7 +24,7 @@
     <link rel="stylesheet" href="{% static 'app/css/bootstrap.min.css' %}">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light">
         <div class="container">
           <a class="navbar-brand" href="/"><i class="flaticon-pharmacy"></i><span>My</span>MD</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,9 +46,9 @@
         </div>
       </nav>
         
-            <div class="container">
+            <!-- <div class="container"> -->
                 {% block content %} {% endblock %}
-            </div><!-- /.container -->    
+            <!-- </div> -->
     
             <section class="ftco-section-parallax">
               <div class="parallax-img d-flex align-items-center">
@@ -201,8 +202,8 @@
           <script src="{% static 'app/js/bootstrap-datepicker.js' %}"></script>
           <script src="{% static 'app/js/jquery.timepicker.min.js' %}"></script>
           <script src="{% static 'app/js/scrollax.min.js' %}"></script>
-          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-          <script src="{% static 'app/js/google-map.js' %}"></script>
+          <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+          <script src="{% static 'app/js/google-map.js' %}"></script> -->
           <script src="{% static 'app/js/main.js' %}"></script>
 </body>
 </html>
