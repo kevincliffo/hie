@@ -20,13 +20,12 @@
           <div class="row no-gutters">
             <div class="col-md-4 ftco-animate py-5 nav-link-wrap">
               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                <a class="nav-link px-4 active" id="v-pills-master-tab" data-toggle="pill" href="#v-pills-master" role="tab" aria-controls="v-pills-master" aria-selected="true"><span class="mr-3 flaticon-cardiogram"></span> Today</a>
+                <a class="nav-link px-4 active" id="v-pills-master-tab" data-toggle="pill" href="{% url 'app:today' %}" role="tab" aria-controls="v-pills-master" aria-selected="true"><span class="mr-3 flaticon-cardiogram"></span> Today</a>
+                <a class="nav-link px-4" id="v-pills-buffet-tab" data-toggle="pill" href="{% url 'app:health-data' %}" role="tab" aria-controls="v-pills-buffet" aria-selected="false"><span class="mr-3 flaticon-neurology"></span> Health Data</a>
   
-                <a class="nav-link px-4" id="v-pills-buffet-tab" data-toggle="pill" href="#v-pills-buffet" role="tab" aria-controls="v-pills-buffet" aria-selected="false"><span class="mr-3 flaticon-neurology"></span> Health Data</a>
+                <a class="nav-link px-4" id="v-pills-fitness-tab" data-toggle="pill" href="{% url 'app:sources' %}" role="tab" aria-controls="v-pills-fitness" aria-selected="false"><span class="mr-3 flaticon-stethoscope"></span> Sources</a>
   
-                <a class="nav-link px-4" id="v-pills-fitness-tab" data-toggle="pill" href="#v-pills-fitness" role="tab" aria-controls="v-pills-fitness" aria-selected="false"><span class="mr-3 flaticon-stethoscope"></span> Sources</a>
-  
-                <a class="nav-link px-4" id="v-pills-reception-tab" data-toggle="pill" href="#v-pills-reception" role="tab" aria-controls="v-pills-reception" aria-selected="false"><span class="mr-3 flaticon-tooth"></span> MyMD</a>
+                <a class="nav-link px-4" id="v-pills-reception-tab" data-toggle="pill" href="{% url 'app:index' %}" role="tab" aria-controls="v-pills-reception" aria-selected="false"><span class="mr-3 flaticon-tooth"></span> MyMD</a>
               </div>
             </div>
             <div class="col-md-8 ftco-animate p-4 p-md-5 d-flex align-items-center">

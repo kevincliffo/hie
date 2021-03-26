@@ -12,4 +12,9 @@ urlpatterns = [
     path('departments/', views.departments, name="departments"),
     path('doctors/', views.doctors, name="doctors"),
     path('blogs/', views.blogs, name="blogs"),
+    path('today/', views.today, name="today"),
+    path('health-data/', views.healthdata, name="health-data"),
+    path('sources/', views.sources, name="sources"),
+    path('department/', views.department, name="department"),
+    path('departments/', views.departments, name="departments"),
 ]

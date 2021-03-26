@@ -32,3 +32,23 @@ def doctors(request):
 def blogs(request):
     context = {}
     return render(request, 'app/blogs.html', context)
+
+def today(request):
+    context = {}
+    return render(request, 'app/today.html', context)
+
+def healthdata(request):
+    context = {}
+    return render(request, 'app/healthdata.html', context)
+
+def sources(request):
+    context = {}
+    return render(request, 'app/sources.html', context) 
+
+def department(request):
+    context = {}
+    return render(request, 'app/department.html', context)   
+
+def departments(request):
+    context = {}
+    return render(request, 'app/departments.html', context)           
